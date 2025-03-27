@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-size: cover;
+  background-image: url('https://img.freepik.com/premium-vector/seamless-pattern-hand-drawn-baking-elements_621139-11.jpg?semt=ais_hybrid');
+  color: #49130c;
+  background: #fff5f0;
+  color: #2d1a0f;
+
+}
+
+.navbar {
+  min-height: 80px;
+  background-color: #fbdcad;
+  border-radius: 0px;
+
+}
+
+.navbar-brand {
+  padding: 0px;
+  height: 80px;
+  background-color: #fbdcad;
+  margin-right: 30px;
+}
+
+.navbar-toggle {
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #49130c;      
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+    line-height: 27px;  
+  }
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a { background-color: #e6637f;}
+
+.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus { background-color: #F2D4A7}
+
+
+.navbar-brand>img
+{height: 80px;}
+
+.panel {
+  position: relative;
+  left: 0;
+}
+
+.box {
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  padding: 0px 35px 0px 25px; 
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+  height: 15%;
+  opacity: 0.6;
+  text-align: left;
+  transition: 1s;   
+}
+
+.box:hover {
+  opacity: 0.9;
+}
+
+.img-thumbnail {
+  border-color: #ffffff;
+  border-width: 12px;
+  width: 100%;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content2 {
+  text-align: center;
+  border-top: 2px solid #e6637f;
+  border-bottom: 2px solid #e6637f;
+  padding: 20px;
+}
+
+.col-sm-4 {
+  background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            position: relative;
+}
+.col-sm-4:hover {
+  transform: translateY(-2px);
+}
+.img-circle {
+  display: block;
+  margin: auto;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+} 
+
+h3 {padding: 20px;}
+
+#carousel {
+  margin-top: 20px;
+}
+
+.carousel-inner img {
+  width: 100%; 
+  margin: auto;
+  min-height:200px;
+}
+
+.carousel-inner p {
+  font-size: 130%;
+}
+
+.carousel-caption {
+  background-color: #fff;
+  opacity: 0.6;
+  color: #000;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none; 
+  }
+}
+
+footer {
+  background-color: #fbdcad;
+  padding: 0 0 40px;
+}
+
+#footer1, #footer2, #footer3 {
+  text-align: left;
+  padding: 0 0 0 90px;
+  color: #49130c;
+}
+
+.footer-links {
+  text-align: left;
+  padding: 10px 0 0 90px;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 50px;
+}

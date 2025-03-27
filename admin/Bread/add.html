@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdf3e7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            border-top: 6px solid #ffb703;
+            transition: transform 0.3s ease;
+        }
+
+        form:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #d62828;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: 500;
+            color: #6a0572;
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea,
+        input[type="date"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 14px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+            background-color: #fafafa;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus,
+        textarea:focus,
+        input[type="date"]:focus {
+            border-color: #ffb703;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #ffb703;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(255, 183, 3, 0.2);
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #f27f1a;
+            box-shadow: 0 4px 12px rgba(214, 40, 40, 0.3);
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .form-footer a {
+            color: #d62828;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="connect_bread.php" method="post">
+        <fieldset>
+            <label for="name">Enter Name of Cake:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="image">Enter Image url</label>
+            <input type="text" id="email" name="image" required />
+            <label for="stock">Enter Stock</label>
+            <input type="text" id="stock" name="stock_status" required />
+            <label for="price">Enter Price</label>
+            <input type="text" id="price" name="price" required/>
+            <br> <br>
+            <input type="submit" value="Submit" />
+        </fieldset>
+    </form>
+</body>
+
+</html>
